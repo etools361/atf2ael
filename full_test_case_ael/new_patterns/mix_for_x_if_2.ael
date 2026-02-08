@@ -1,0 +1,21 @@
+defun mix_for_x_if_2()
+{
+    decl out=0;
+    decl o=0;
+    for (o = 0; o < 2; o++)
+    {
+        decl sum=0;
+        if(sum == 0)
+        {
+            if(sum == 1)
+            {
+                sum = sum + 1;}
+            else
+            {
+                sum = sum + 2;}}
+        else
+        {
+            sum = sum + 2;}    out = out + 1;
+    }
+    return out;
+}

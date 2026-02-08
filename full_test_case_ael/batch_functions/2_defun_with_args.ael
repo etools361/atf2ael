@@ -1,0 +1,12 @@
+// 2_defun_with_args.ael - 带参数函数
+// 目的：函数定义与参数传递模式
+
+decl result = 0;
+
+defun add(a, b)
+{
+    result = a + b;
+}
+
+add(2, 3);
+

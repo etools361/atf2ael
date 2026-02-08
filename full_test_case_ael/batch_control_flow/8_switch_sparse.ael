@@ -1,0 +1,21 @@
+// 8_switch_sparse.ael - switch/case 稀疏分支
+// 目的：case 0,10,100 + default，用于观察分支表编码在稀疏分布下的行为
+
+decl x = 10;
+decl a = 0;
+switch (x)
+{
+    case 0:
+        a = 1;
+        break;
+    case 10:
+        a = 2;
+        break;
+    case 100:
+        a = 3;
+        break;
+    default:
+        a = -1;
+        break;
+}
+

@@ -1,0 +1,13 @@
+// Generalization test 14: comments and tricky sequences
+defun genq_comments_edge()
+{
+    decl a;
+    a = 1; // end-of-line comment
+    /* block comment with operators: + - * / == != <= >= && || */
+    a = a + 1;
+    /* multiline
+       block comment
+    */
+    return a;
+}
+

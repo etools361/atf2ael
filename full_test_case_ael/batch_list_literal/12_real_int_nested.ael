@@ -1,0 +1,10 @@
+// 12_real_int_nested.ael - 嵌套列表（实数+整数混合）
+// 目的：观察 {{0.0005, 0}, {0.0015, 0}} 的 IR 模式
+// 这是 nXm_QFN_art.ael 中实际使用的模式！
+
+decl a;
+
+defun test_real_int_nested()
+{
+    a = {{0.0005, 0}, {0.0015, 0}};
+}

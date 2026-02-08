@@ -1,0 +1,9 @@
+// 3_call_two_args.ael - 双参数函数调用
+// 目的：测试传递多个参数
+
+defun add(a, b)
+{
+    decl sum = a + b;
+}
+
+add(10, 20);

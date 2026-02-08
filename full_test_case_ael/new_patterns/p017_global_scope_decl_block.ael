@@ -1,0 +1,7 @@
+// p017_global_scope_decl_block.ael
+// 最小复现：全局匿名块 { ... } 内的 local decl 列表（全局 locals block）
+
+{
+    decl winInstP, dsnPtr;
+}
+

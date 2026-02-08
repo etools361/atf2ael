@@ -1,0 +1,6 @@
+# Symbol Table Log: 1_int_neg_const.ael
+# Format: SYMBOL: type=<TYPE> name="<name>" offset=<offset>
+# Types: FUNCTION, ARG, LOCAL, GLOBAL
+#
+
+SYMBOL: type=GLOBAL name="a" offset=0000

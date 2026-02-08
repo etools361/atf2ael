@@ -1,0 +1,6 @@
+// p028_addr_of_assign.ael
+// Minimal address-of assignment: b = &a
+
+decl a = 1;
+decl b;
+b = &a;

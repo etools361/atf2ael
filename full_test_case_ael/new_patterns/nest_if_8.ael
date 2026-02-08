@@ -1,0 +1,46 @@
+defun nest_if_8()
+{
+    decl sum=0;
+    if(sum == 0)
+    {
+        if(sum == 1)
+        {
+            if(sum == 2)
+            {
+                if(sum == 3)
+                {
+                    if(sum == 4)
+                    {
+                        if(sum == 5)
+                        {
+                            if(sum == 6)
+                            {
+                                if(sum == 7)
+                                {
+                                    sum = sum + 1;}
+                                else
+                                {
+                                    sum = sum + 2;}}
+                            else
+                            {
+                                sum = sum + 2;}}
+                        else
+                        {
+                            sum = sum + 2;}}
+                    else
+                    {
+                        sum = sum + 2;}}
+                else
+                {
+                    sum = sum + 2;}}
+            else
+            {
+                sum = sum + 2;}}
+        else
+        {
+            sum = sum + 2;}}
+    else
+    {
+        sum = sum + 2;}
+    return sum;
+}

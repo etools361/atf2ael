@@ -1,0 +1,16 @@
+// Generalization test 11: compound assignment and ++/--
+defun genq_compound_assign_incdec()
+{
+    decl a, b;
+    a = 1;
+    b = 2;
+    a += b;
+    a -= 1;
+    a *= 3;
+    a /= 2;
+    a %= 2;
+    a++;
+    --b;
+    return a + b;
+}
+

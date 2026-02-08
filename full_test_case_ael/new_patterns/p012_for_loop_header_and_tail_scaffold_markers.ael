@@ -1,0 +1,18 @@
+// Base pattern p012: for-loop header needs BEGIN_LOOP, and tail needs LOOP_AGAIN/LOOP_EXIT scaffolds.
+// This targets cases seen in utilities/demo_fet1_1 where atf2ir was missing OP=36/38/39.
+
+defun p012_dummy(x) { return x; }
+
+defun p012_for_loop_header_and_tail_scaffold_markers(nf)
+{
+    decl i = 0;
+    decl acc = 0;
+
+    for (i = 0; i < (nf / 2.0); ++i)
+    {
+        acc = acc + p012_dummy(i);
+    }
+
+    return acc;
+}
+

@@ -1,0 +1,9 @@
+// 4_call_string_arg.ael - 字符串参数函数调用
+// 目的：测试传递字符串参数
+
+defun print_msg(msg)
+{
+    decl s = msg;
+}
+
+print_msg("hello");

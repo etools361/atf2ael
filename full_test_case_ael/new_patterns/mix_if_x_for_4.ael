@@ -1,0 +1,26 @@
+defun mix_if_x_for_4()
+{
+    decl out=0;
+    if(1)
+    {
+        decl sum=0;
+        decl i0=0;
+        decl i1=0;
+        decl i2=0;
+        decl i3=0;
+        for (i0 = 0; i0 < 2; i0++)
+        {
+            for (i1 = 0; i1 < 2; i1++)
+            {
+                for (i2 = 0; i2 < 2; i2++)
+                {
+                    for (i3 = 0; i3 < 2; i3++)
+                    {
+                        sum = sum + 1;}}}}    out = out + 1;
+    }
+    else
+    {
+        out = out + 2;
+    }
+    return out;
+}

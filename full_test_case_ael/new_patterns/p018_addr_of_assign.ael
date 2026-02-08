@@ -1,0 +1,6 @@
+// p018_addr_of_assign.ael
+// Minimal case: address-of assignment
+
+decl a = 1;
+decl b = &a;
+

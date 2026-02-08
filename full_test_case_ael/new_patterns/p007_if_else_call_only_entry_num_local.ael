@@ -1,0 +1,21 @@
+// p007: if/else 的 else 分支以纯 call 语句开头
+// 目的：
+//   - 覆盖“SET_LABEL(else-entry) 后需要 NUM_LOCAL，即使 else-body 只是 call-only”
+//   - 用最小模式避免依赖 demo 工程中的大文件上下文
+
+defun p007_if_else_call_only_entry_num_local(x)
+{
+    decl y = NULL;
+
+    if (x == 1)
+    {
+        foo(y, x);
+    }
+    else
+    {
+        foo(y, x);
+    }
+
+    return y;
+}
+

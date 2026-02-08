@@ -1,0 +1,23 @@
+// p001: if/else + else 分支以“纯表达式语句”开头 + return list
+// 目的：复现 hooked IR 中在 else_label 入口处插入 NUM_LOCAL 的模板，以及 join label 前的 scope 相关 NUM_LOCAL。
+
+defun p001_if_else_expr_stmt_return_list(x, y)
+{
+    decl w1 = x;
+    decl w2 = y;
+    decl w3 = 0;
+    decl w4 = 1;
+
+    if (w1 > 0)
+    {
+        w3 = w1 + 1;
+    }
+    else
+    {
+        // 纯表达式语句（非赋值/非函数调用），用于覆盖 label-entry NUM_LOCAL 的基础模式
+        w2 + w4;
+    }
+
+    return list(w2, w4);
+}
+

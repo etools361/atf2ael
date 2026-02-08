@@ -1,0 +1,30 @@
+defun nest_for_8()
+{
+    decl sum=0;
+    decl i0=0;
+    decl i1=0;
+    decl i2=0;
+    decl i3=0;
+    decl i4=0;
+    decl i5=0;
+    decl i6=0;
+    decl i7=0;
+    for (i0 = 0; i0 < 2; i0++)
+    {
+        for (i1 = 0; i1 < 2; i1++)
+        {
+            for (i2 = 0; i2 < 2; i2++)
+            {
+                for (i3 = 0; i3 < 2; i3++)
+                {
+                    for (i4 = 0; i4 < 2; i4++)
+                    {
+                        for (i5 = 0; i5 < 2; i5++)
+                        {
+                            for (i6 = 0; i6 < 2; i6++)
+                            {
+                                for (i7 = 0; i7 < 2; i7++)
+                                {
+                                    sum = sum + 1;}}}}}}}}
+    return sum;
+}

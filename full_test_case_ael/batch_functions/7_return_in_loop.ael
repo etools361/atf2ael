@@ -1,0 +1,19 @@
+// 7_return_in_loop.ael - 循环中的 early return
+// 目的：在 while 内部根据条件提前返回
+
+decl r = -1;
+
+defun find_first_gt3()
+{
+    decl i = 0;
+    while (i < 10)
+    {
+        if (i > 3)
+            return i;
+        i = i + 1;
+    }
+    return -1;
+}
+
+r = find_first_gt3();
+

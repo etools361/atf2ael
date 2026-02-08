@@ -1,0 +1,9 @@
+// 01_empty_list.ael - 空列表
+// 目的：观察空列表 list() 的 IR 模式（原始 aelcomp 不接受 "{}" 作为空列表表达式）
+
+decl a;
+
+defun test_empty_list()
+{
+    a = list();
+}

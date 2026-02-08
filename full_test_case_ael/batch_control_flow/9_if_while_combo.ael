@@ -1,0 +1,14 @@
+// 9_if_while_combo.ael - if + while 组合
+// 目的：if 外包 while，类似 demo 里“条件 + 循环”的层次结构
+
+decl sum = 0;
+decl i = 0;
+if (2 > 1)
+{
+    while (i < 3)
+    {
+        sum = sum + i;
+        i = i + 1;
+    }
+}
+

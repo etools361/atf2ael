@@ -1,0 +1,25 @@
+// p005: elseif header + 长条件表达式（避免误插 entry NUM_LOCAL）
+// 目的：
+//   - 覆盖“SET_LABEL(elseif header) 后不应插入 NUM_LOCAL”的泛化规则
+//   - 长条件用于拉开 SET_LABEL 与 ADD_LABEL/BRANCH_TRUE scaffold 的距离，避免依赖“按 items 计数”的短窗口
+
+defun p005_elseif_header_long_cond_no_entry_num_local(a, b, c, d, e, f, g, h)
+{
+    decl r = 0;
+
+    if (a == 0)
+    {
+        r = 10;
+    }
+    else if ((((b + c) * (d - e)) > f) && (g == h))
+    {
+        r = 20;
+    }
+    else
+    {
+        r = -1;
+    }
+
+    return r;
+}
+

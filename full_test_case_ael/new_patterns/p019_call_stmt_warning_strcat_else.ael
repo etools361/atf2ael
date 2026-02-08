@@ -1,0 +1,15 @@
+// p019: call statement inside else branch with nested call args.
+defun p019_call_stmt_warning_strcat_else(flag)
+{
+    decl instN = "N";
+    decl instID = "ID";
+    if (flag)
+    {
+        return NULL;
+    }
+    else
+    {
+        warning("", 0, strcat(" ", instN, " - ", instID), "The following component is selected but cannot be changed:\n");
+    }
+    return NULL;
+}

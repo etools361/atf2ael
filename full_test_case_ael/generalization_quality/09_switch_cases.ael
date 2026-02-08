@@ -1,0 +1,19 @@
+// Generalization test 09: switch/case/default paths
+defun genq_switch_cases(v)
+{
+    decl out;
+    out = 0;
+    switch (v) {
+        case 0:
+            out = 10;
+            break;
+        case 1:
+            out = 20;
+            break;
+        default:
+            out = 30;
+            break;
+    }
+    return out;
+}
+

@@ -1,0 +1,12 @@
+// Generalization test 08: nested ternary expressions
+defun genq_nested_ternary()
+{
+    decl a, b, c, d, e;
+    a = 1;
+    b = 2;
+    c = 3;
+    d = 4;
+    e = (a < b) ? ((b < c) ? b : c) : d;
+    return e;
+}
+

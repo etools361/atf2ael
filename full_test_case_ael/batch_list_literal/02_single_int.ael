@@ -1,0 +1,9 @@
+// 02_single_int.ael - 单元素列表（整数）
+// 目的：观察 {1} 的 IR 模式，特别是 OP=53 的数量
+
+decl a;
+
+defun test_single_int()
+{
+    a = {1};
+}

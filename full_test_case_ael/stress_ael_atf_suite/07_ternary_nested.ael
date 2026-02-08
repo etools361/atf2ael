@@ -1,0 +1,8 @@
+// Nested ternary
+decl a = 1;
+decl b = 2;
+decl c = 3;
+decl d = 4;
+decl e = 5;
+decl x = a ? b : c ? d : e;
+

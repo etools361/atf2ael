@@ -1,0 +1,11 @@
+// 5_call_mixed_args.ael - 混合类型参数函数调用
+// 目的：测试传递不同类型的参数
+
+defun log_info(name, code, msg)
+{
+    decl s1 = name;
+    decl n = code;
+    decl s2 = msg;
+}
+
+log_info("test", 100, "success");

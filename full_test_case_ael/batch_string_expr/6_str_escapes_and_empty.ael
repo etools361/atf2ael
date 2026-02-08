@@ -1,0 +1,8 @@
+// 6.ael - 空字符串与特殊转义字符
+// 目的："", "\\t", "\\n", "\\\""
+
+decl s0 = "";
+decl s1 = "A\tB";
+decl s2 = "Line1\nLine2";
+decl s3 = "Quote: \" and Backslash: \\";
+

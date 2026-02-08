@@ -1,0 +1,13 @@
+// 3_global_vs_local.ael - 全局变量与局部变量同名
+// 目的：观察符号表与 ATF 记录中的作用域差异
+
+decl x = 1;
+
+defun test()
+{
+    decl x = 2;
+    x = x + 1;
+}
+
+test();
+

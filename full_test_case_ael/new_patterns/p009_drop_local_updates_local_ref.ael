@@ -1,0 +1,33 @@
+// p009: DROP_LOCAL 必须更新 active locals，否则 local_ref 索引会错位
+// 复现来源：full_test_case_ael/demo_via_M1M2.ael 中两个 if 分支顺序声明局部变量 w/l，
+//          第二段 if 内的 `decl l = ...` 会在第一段 if 结束后触发 DROP_LOCAL。
+// 目标：ATF->IR 解析 Type23(DROP_LOCAL) 时必须同步更新 ctx 的 local_count。
+
+defun p009_drop_local_updates_local_ref(parmName, itemInfoP)
+{
+    decl checkVal;
+    decl parmList = NULL;
+
+    if (parmName == "w")
+    {
+        decl var_present = pcb_get_parm_type(itemInfoP, "w");
+        if (var_present != NULL)
+        {
+            decl w = pcb_get_mks(itemInfoP, "w");
+            checkVal = w;
+        }
+    }
+
+    if (parmName == "l")
+    {
+        decl var_present = pcb_get_parm_type(itemInfoP, "l");
+        if (var_present != NULL)
+        {
+            decl l = pcb_get_mks(itemInfoP, "l");
+            checkVal = l;
+        }
+    }
+
+    return(parmList);
+}
+

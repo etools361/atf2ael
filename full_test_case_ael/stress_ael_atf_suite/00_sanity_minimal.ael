@@ -1,0 +1,4 @@
+// Minimal sanity file
+decl x = 1;
+decl y = x + 2;
+

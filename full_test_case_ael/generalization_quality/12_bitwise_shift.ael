@@ -1,0 +1,9 @@
+// Generalization test 12: bitwise and shifts
+defun genq_bitwise_shift(x, y)
+{
+    decl a;
+    a = (x & y) | (x ^ y);
+    a = (a << 2) >> 1;
+    return a;
+}
+

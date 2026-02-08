@@ -1,0 +1,7 @@
+// 14.ael - 多条调用语句混合使用 -1 与 2-1
+// 目的：在同一文件内组合不同调用模式，便于批量观察
+
+set_design_type(-1);
+set_design_type(2 - 1);
+library_group("*", "*", 1, "abc");
+

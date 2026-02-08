@@ -1,0 +1,9 @@
+// 2_call_one_arg.ael - 单参数函数调用
+// 目的：测试传递单个参数
+
+defun set_value(val)
+{
+    decl result = val;
+}
+
+set_value(42);

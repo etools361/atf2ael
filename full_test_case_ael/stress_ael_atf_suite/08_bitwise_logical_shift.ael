@@ -1,0 +1,9 @@
+// Bitwise vs logical ops, shifts, precedence
+decl a = 1;
+decl b = 2;
+decl c = 3;
+decl d = 4;
+decl x = (a & b) && (c | d);
+decl y = (a | b) ^ (c & d);
+decl z = (a << b) + (c >> 1);
+

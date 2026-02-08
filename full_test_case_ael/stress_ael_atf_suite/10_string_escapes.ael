@@ -1,0 +1,4 @@
+// String escapes and backslashes
+decl s1 = "line1\\nline2";
+decl s2 = "tab\\tquote\\\"slash\\\\end";
+

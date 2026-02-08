@@ -1,0 +1,9 @@
+// p018: call statement with nested call args (warning + strcat).
+// Ensures stray CALLARGS markers do not drop the statement at STMT_END.
+defun p018_call_stmt_warning_strcat()
+{
+    decl compName = "C";
+    decl instName = "I";
+    warning("", 0, strcat(" ", compName, " - ", instName), "The following component is selected but cannot be changed:\n");
+    return NULL;
+}

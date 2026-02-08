@@ -1,0 +1,17 @@
+// 6_return_if_else.ael - 函数内多分支 return
+// 目的：if / else if / else 中的多返回路径
+
+decl r = 0;
+
+defun select_sign(x)
+{
+    if (x > 0)
+        return 1;
+    else if (x < 0)
+        return -1;
+    else
+        return 0;
+}
+
+r = select_sign(1);
+

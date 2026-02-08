@@ -1,0 +1,9 @@
+// 06_two_reals.ael - 双元素列表（实数）
+// 目的：观察 {1.5, 2.5} 的 IR 模式
+
+decl a;
+
+defun test_two_reals()
+{
+    a = {1.5, 2.5};
+}

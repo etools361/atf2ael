@@ -1,0 +1,9 @@
+// 7.ael - 多语句，混合各种布尔形式
+// 目的：在同一文件中组合 true/false/比较/逻辑运算
+
+decl a = true;
+decl b = false;
+decl c = (2 > 1);
+decl d = (2 > 3);
+decl e = (true && (2 > 1));
+

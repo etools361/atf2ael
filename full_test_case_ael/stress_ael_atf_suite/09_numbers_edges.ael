@@ -1,0 +1,7 @@
+// Numeric edges: big ints (may become real), scientific notation, imag
+decl big = 999999999999999999999;
+decl r1 = 1e3;
+decl r2 = 1e-3;
+decl z1 = 2i;
+decl z2 = 1.0 + 2i;
+

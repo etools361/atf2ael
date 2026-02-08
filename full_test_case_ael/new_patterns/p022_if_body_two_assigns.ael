@@ -1,0 +1,12 @@
+// p022: if body contains multiple statements and must keep braces.
+defun p022_if_body_two_assigns(flag)
+{
+    decl a = 1;
+    decl b = 2;
+    if (flag == 1)
+    {
+        a = -a;
+        b = -b;
+    }
+    return list(a, b);
+}

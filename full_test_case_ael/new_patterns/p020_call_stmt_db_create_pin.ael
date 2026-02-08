@@ -1,0 +1,10 @@
+// p020: simple call statement with many args (db_create_pin).
+defun p020_call_stmt_db_create_pin()
+{
+    decl context = NULL;
+    decl pinX = 1;
+    decl pinY = 2;
+    decl pinAng = 90;
+    db_create_pin(context, pinX, pinY, pinAng, 1, 1, NULL, NULL);
+    return NULL;
+}

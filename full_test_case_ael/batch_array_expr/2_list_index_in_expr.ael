@@ -1,0 +1,6 @@
+// 2_list_index_in_expr.ael - 下标结果参与表达式
+// 目的：arr[i] 出现在加法中
+
+decl arr = list(1, 2, 3);
+decl sum = arr[0] + arr[1] + arr[2];
+

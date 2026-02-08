@@ -1,0 +1,6 @@
+// 11_ternary_nested.ael - 嵌套三元运算
+// 目的：cond ? a : (cond2 ? b : c) 的模式
+
+decl x = 1;
+decl r = (x == 0) ? 0 : ((x == 1) ? 1 : -1);
+

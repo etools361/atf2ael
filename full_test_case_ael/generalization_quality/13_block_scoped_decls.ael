@@ -1,0 +1,14 @@
+// Generalization test 13: nested blocks and local decls with init
+defun genq_block_scoped_decls()
+{
+    decl a;
+    a = 0;
+    {
+        decl b, c;
+        b = 1;
+        c = b + 2;
+        a = a + c;
+    }
+    return a;
+}
+

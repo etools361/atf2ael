@@ -1,0 +1,9 @@
+// 07_int_real_mix.ael - 混合整数和实数
+// 目的：观察 {1, 2.5} 的 IR 模式，重点是 nXm_QFN_art 的 {0.0005, 0} 模式
+
+decl a;
+
+defun test_int_real_mix()
+{
+    a = {1, 2.5};
+}

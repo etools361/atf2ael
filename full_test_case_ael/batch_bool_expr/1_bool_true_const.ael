@@ -1,0 +1,5 @@
+// 1.ael - 单语句，布尔常量 true
+// 目的：观察 true 的 IR / ATF / VM 编码
+
+decl a = true;
+

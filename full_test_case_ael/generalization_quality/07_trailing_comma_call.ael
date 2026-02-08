@@ -1,0 +1,13 @@
+// Generalization test 07: trailing comma in call args should add an implicit NULL
+defun genq_trailing_comma_call()
+{
+    decl x;
+    x = dummy_func(1, 2, );
+    return x;
+}
+
+defun dummy_func(a, b, c)
+{
+    return a;
+}
+

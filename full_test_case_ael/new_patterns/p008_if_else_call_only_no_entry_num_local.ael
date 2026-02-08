@@ -1,0 +1,17 @@
+// p008: if/else 的分支是“单行 call 语句”（无大括号块）
+// 目的：
+//   - 覆盖“SET_LABEL(分支入口) 后不应强制 NUM_LOCAL”的模式（无大括号时常见）
+//   - 用最小模式复现 nXm_QFN_art 中的过度插入 NUM_LOCAL 场景
+
+defun p008_if_else_call_only_no_entry_num_local(x)
+{
+    decl y = NULL;
+
+    if (x == 1)
+        foo(y, x);
+    else
+        foo(y, x);
+
+    return y;
+}
+

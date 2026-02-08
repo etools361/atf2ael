@@ -1,0 +1,10 @@
+// 16_nested_first_four_elem.ael - 第一个内层列表4元素
+// 目的：测试第一个列表元素数=OP=53数的假设
+// 预期：第一个列表 4个OP=53，第二个列表 1个OP=53
+
+decl a;
+
+defun test_nested_first_four()
+{
+    a = {{1, 2, 3, 4}, {5, 6}};
+}

@@ -1,0 +1,19 @@
+// p027: else-if chain with empty first branch (braced)
+// Covers: empty then-block followed by else-if chain.
+
+defun p027_elseif_chain_empty_first_branch(x)
+{
+    if (x == 1)
+    {
+    }
+    else if (x == 2)
+    {
+        x = 3;
+    }
+    else if (x == 3)
+    {
+        x = 4;
+    }
+
+    return x;
+}

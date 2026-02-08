@@ -1,0 +1,11 @@
+// 11_do_while_basic.ael - do-while 循环
+// 目的：测试 do { ... } while(cond); 的循环结构
+
+decl i = 0;
+
+do
+{
+    i = i + 1;
+}
+while (i < 3);
+

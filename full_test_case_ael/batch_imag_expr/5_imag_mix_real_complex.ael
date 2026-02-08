@@ -1,0 +1,7 @@
+// 5.ael - 多语句，组合复数和实数
+// 目的：同一文件中混合 real/imag
+
+decl a = 1.0;
+decl b = 2i;
+decl c = 1.0 + 2i;
+

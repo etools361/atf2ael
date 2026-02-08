@@ -1,0 +1,9 @@
+// p024: single-statement if without braces (call assignment).
+defun p024_if_single_stmt_call_assign(cond)
+{
+    decl ctx = NULL;
+    decl rect = NULL;
+    if (cond)
+        rect = db_add_rectangle(ctx, 1, 0, 0, 1, 1);
+    return rect;
+}

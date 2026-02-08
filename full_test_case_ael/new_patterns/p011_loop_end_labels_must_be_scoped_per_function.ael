@@ -1,0 +1,26 @@
+// Base pattern p011: loop-end label IDs are reused across functions.
+// Goal: atf2ir must NOT inject LOOP_EXIT into a different function's control flow
+// just because another function contains a loop with an END_LOOP label.
+
+defun p011_func_with_loop()
+{
+    decl l = list(1, 2);
+    while (is_list(l))
+    {
+        l = cdr(l);
+    }
+    return 0;
+}
+
+defun p011_func_without_loop_but_with_if_chain()
+{
+    decl s = "a";
+    if (s == "a")
+        s = "a";
+    else if (s == "b")
+        s = "b";
+    else
+        s = "c";
+    return s;
+}
+

@@ -1,0 +1,35 @@
+// p002: else 分支以 if( ... ) 开头（会在 else_label 后立刻进入条件模板），再 return list
+// 目的：覆盖 demo_mmWave_Cross_art 的基础失效模式：
+//   - SET_LABEL else_label 后仍需插入 NUM_LOCAL，即使紧接着是条件模板（不是“elseif chain”）
+//   - join label（end_label）前的 NUM_LOCAL（与 return/list 模板组合）
+
+defun p002_if_else_else_starts_with_if_return_list(w1, w2, w3, w4)
+{
+    decl pin2_y, pin4_y;
+    decl context = 0;
+    decl pin_layer = 0;
+    decl encVal = 0.1;
+    decl met_shape1H = 0;
+    decl met_shape2H = 0;
+    decl met_shapeXH = 0;
+
+    if (w1 > 0)
+    {
+        pin2_y = 0.5*w1;
+        pin4_y = -0.5*w1;
+    }
+    else
+    {
+        if (w2 > w4)
+        {
+            // 仅用于稳定产生 call + 赋值模板（不依赖真实实现）
+            met_shape1H = db_add_rectangle(context, pin_layer, w1, w2, w3, w4);
+            met_shape2H = db_add_rectangle(context, pin_layer, w1, w2, w3, w4);
+            if ((w1 + encVal) > (w2 - encVal))
+                met_shapeXH = db_add_rectangle(context, pin_layer, w1, w2, w3, w4);
+        }
+    }
+
+    return list(met_shape1H, met_shape2H, met_shapeXH);
+}
+

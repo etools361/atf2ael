@@ -1,0 +1,21 @@
+// Many locals across nested blocks to stress scope handling
+decl g = 0;
+
+defun nested_locals(a, b)
+{
+    decl x = a + b;
+    {
+        decl x1 = x + 1;
+        {
+            decl x2 = x1 + 2;
+            {
+                decl x3 = x2 + 3;
+                g = x3;
+            }
+        }
+    }
+    return g;
+}
+
+nested_locals(3, 4);
+

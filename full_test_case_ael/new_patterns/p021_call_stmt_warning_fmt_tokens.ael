@@ -1,0 +1,6 @@
+// p021: call statement with nested list + fmt_tokens args.
+defun p021_call_stmt_warning_fmt_tokens()
+{
+    warning("aelcmd", 16, fmt_tokens(list("Invalid character found", "only alphanumeric characters [0-9A-Z] are supported.")));
+    return NULL;
+}

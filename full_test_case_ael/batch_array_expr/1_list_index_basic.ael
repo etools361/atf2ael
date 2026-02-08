@@ -1,0 +1,8 @@
+// 1_list_index_basic.ael - list + 下标访问
+// 目的：模拟 boot_1.ael 中的 designKitRecord[0] 模式，但用自建 list
+
+decl arr = list(10, 20, 30);
+decl a0 = arr[0];
+decl a1 = arr[1];
+decl a2 = arr[2];
+

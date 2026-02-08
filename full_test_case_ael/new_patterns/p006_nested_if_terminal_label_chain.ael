@@ -1,0 +1,14 @@
+// p006: 嵌套 if + 文件结尾 label 链
+// 目的：
+//   - 覆盖“NUM_LOCAL ; SET_LABEL A ; (缺失 NUM_LOCAL) ; SET_LABEL B ; EOF”的补全逻辑
+//   - 该模式来自全量用例 3_nested_if 的最小化版本
+
+decl a = 0;
+if (2 > 1)
+{
+    if (3 > 2)
+    {
+        a = 1;
+    }
+}
+

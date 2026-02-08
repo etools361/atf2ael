@@ -1,0 +1,10 @@
+// Generalization test 05: imaginary literals (e.g. 2i, 2.5i)
+defun genq_imag_literals()
+{
+    decl a, b, c;
+    a = 2i;
+    b = 2.5i;
+    c = a + b;
+    return c;
+}
+

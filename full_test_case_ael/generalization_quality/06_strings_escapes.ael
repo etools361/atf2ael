@@ -1,0 +1,9 @@
+// Generalization test 06: strings with escapes (lexer preserves backslashes)
+defun genq_strings_escapes()
+{
+    decl s1, s2;
+    s1 = "line1\\nline2\\t\\\"quote\\\"\\\\slash";
+    s2 = "percent=%d and %s placeholders";
+    return s1;
+}
+

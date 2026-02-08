@@ -1,0 +1,16 @@
+// Base pattern p010: loop-tail scaffold should include LOOP_AGAIN + LOOP_EXIT.
+// Goal: atf2ir must restore missing OP=38/OP=39 in:
+//   TRUE ; [LOOP_AGAIN] ; BRANCH_TRUE body_label ; [LOOP_EXIT] ; SET_LABEL end_label ; END_LOOP
+
+defun p010_loop_tail_scaffold_add_missing_loop_again_exit()
+{
+    decl l = list(1, 2, 3);
+
+    while (is_list(l))
+    {
+        l = cdr(l);
+    }
+
+    return 0;
+}
+

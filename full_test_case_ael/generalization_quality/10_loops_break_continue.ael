@@ -1,0 +1,29 @@
+// Generalization test 10: while/for/do-while with break/continue
+defun genq_loops_break_continue(n)
+{
+    decl i, acc;
+    i = 0;
+    acc = 0;
+
+    while (i < n) {
+        i = i + 1;
+        if (i == 2) {
+            continue;
+        }
+        if (i == 5) {
+            break;
+        }
+        acc = acc + i;
+    }
+
+    for (i = 0; i < 3; i = i + 1) {
+        acc = acc + i;
+    }
+
+    do {
+        acc = acc + 1;
+    } while (acc < 0);
+
+    return acc;
+}
+

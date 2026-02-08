@@ -1,0 +1,11 @@
+// Generalization test 02: file should be saved with CRLF line endings (Windows)
+defun genq_crlf_line_endings()
+{
+    decl a;
+    a = 1;
+    if (a == 1) {
+        a = a + 1;
+    }
+    return a;
+}
+

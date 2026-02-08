@@ -1,0 +1,19 @@
+// 8_return_string_null.ael - 函数返回字符串和 NULL
+// 目的：测试 return "str" 与 return NULL 的编码模式
+
+decl s1 = "";
+decl s2 = "";
+
+defun get_name()
+{
+    return "demo_name";
+}
+
+defun get_null()
+{
+    return NULL;
+}
+
+s1 = get_name();
+s2 = get_null();
+

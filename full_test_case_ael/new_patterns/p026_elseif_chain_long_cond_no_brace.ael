@@ -1,0 +1,16 @@
+// p026: no-brace else-if chain with short-circuit conditions
+// Covers: else-if chain where the condition uses &&/|| and "" comparisons.
+
+defun p026_elseif_chain_long_cond_no_brace(a, b)
+{
+    decl out = "";
+
+    if (a && a != "" && b && b != "")
+        out = b;
+    else if ((!a || a == "") && b && b != "")
+        out = b;
+    else if (a && a != "")
+        out = a;
+
+    return out;
+}

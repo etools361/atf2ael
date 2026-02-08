@@ -1,0 +1,18 @@
+defun u_nest_while_2()
+{
+    decl sum = 0;
+    decl w0 = 0;
+    decl w1 = 0;
+    w0 = 0;
+    while (w0 < 2)
+    {
+        w1 = 0;
+        while (w1 < 2)
+        {
+            sum = sum + 1;
+            w1 = w1 + 1;
+        }
+        w0 = w0 + 1;
+    }
+    return sum;
+}

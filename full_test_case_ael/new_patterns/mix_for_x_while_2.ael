@@ -1,0 +1,21 @@
+defun mix_for_x_while_2()
+{
+    decl out=0;
+    decl o=0;
+    for (o = 0; o < 2; o++)
+    {
+        decl sum=0;
+        decl w0=0;
+        decl w1=0;
+        w0 = 0;
+        while (w0 < 2)
+        {
+            w1 = 0;
+            while (w1 < 2)
+            {
+                sum = sum + 1;    w1 = w1 + 1;
+            }    w0 = w0 + 1;
+        }    out = out + 1;
+    }
+    return out;
+}

@@ -1,0 +1,5 @@
+# Symbol Table Log: 
+# Format: SYMBOL: type=<TYPE> name="<name>" offset=<offset>
+# Types: FUNCTION, ARG, LOCAL, GLOBAL
+#
+

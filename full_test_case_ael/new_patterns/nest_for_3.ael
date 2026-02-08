@@ -1,0 +1,15 @@
+defun nest_for_3()
+{
+    decl sum=0;
+    decl i0=0;
+    decl i1=0;
+    decl i2=0;
+    for (i0 = 0; i0 < 2; i0++)
+    {
+        for (i1 = 0; i1 < 2; i1++)
+        {
+            for (i2 = 0; i2 < 2; i2++)
+            {
+                sum = sum + 1;}}}
+    return sum;
+}

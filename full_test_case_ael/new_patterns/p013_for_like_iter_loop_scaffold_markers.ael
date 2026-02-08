@@ -1,0 +1,32 @@
+// Base pattern p013: iterator-style for-loop scaffolds.
+// Targets cases (utilities/custom_drc/demo_mmWave_*) where:
+// - loop head uses for-like header: ADD_LABEL ; BEGIN_LOOP ; SET_LABEL head
+// - loop-control expansions require: LOAD_TRUE/LOOP_EXIT/LOOP_AGAIN markers
+
+defun p013_iter_is_valid(x) { return x != null; }
+defun p013_iter_next(x) { return x; }
+
+defun p013_for_like_iter_loop_scaffold_markers(list)
+{
+    decl it = list;
+    decl acc = 0;
+
+    for (; p013_iter_is_valid(it); it = p013_iter_next(it))
+    {
+        if (acc > 3)
+        {
+            break;
+        }
+
+        if (acc == 2)
+        {
+            ++acc;
+            continue;
+        }
+
+        acc = acc + 1;
+    }
+
+    return acc;
+}
+

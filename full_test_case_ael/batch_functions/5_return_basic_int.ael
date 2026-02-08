@@ -1,0 +1,12 @@
+// 5_return_basic_int.ael - 函数返回整数常量
+// 目的：测试最简单的 return 常量模式
+
+decl r = 0;
+
+defun ret_one()
+{
+    return 1;
+}
+
+r = ret_one();
+

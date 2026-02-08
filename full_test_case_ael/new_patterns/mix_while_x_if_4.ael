@@ -1,0 +1,33 @@
+defun mix_while_x_if_4()
+{
+    decl out=0;
+    decl o=0;
+    o = 0;
+    while (o < 2)
+    {
+        decl sum=0;
+        if(sum == 0)
+        {
+            if(sum == 1)
+            {
+                if(sum == 2)
+                {
+                    if(sum == 3)
+                    {
+                        sum = sum + 1;}
+                    else
+                    {
+                        sum = sum + 2;}}
+                else
+                {
+                    sum = sum + 2;}}
+            else
+            {
+                sum = sum + 2;}}
+        else
+        {
+            sum = sum + 2;}    out = out + 1;
+        o = o + 1;
+    }
+    return out;
+}

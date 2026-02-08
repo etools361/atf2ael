@@ -1,0 +1,12 @@
+// p004: if 结束后的 join 点紧跟 decl（需要 stmt_end ; NUM_LOCAL ; SET_LABEL ; ADD_LOCAL）
+// 目的：覆盖 demo_mmWave_Cross_art 中的模式：stmt_end 后紧接 SET_LABEL，且 label 后立刻出现 ADD_LOCAL。
+
+defun p004_if_join_then_decl_return(x)
+{
+    // 用单语句 if，避免触发额外的 if-body NUM_LOCAL 规则（让用例聚焦 join+decl）
+    if (x > 0) x = 1;
+
+    // 尝试触发：控制流 join 后的局部变量声明
+    decl return_list = 0;
+    return return_list;
+}

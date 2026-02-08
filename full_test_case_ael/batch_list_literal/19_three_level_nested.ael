@@ -1,0 +1,10 @@
+// 19_three_level_nested.ael - 三层嵌套
+// 目的：观察三层嵌套的OP=53模式
+// 预期：最内层列表也遵循"第一个特殊"规律？
+
+decl a;
+
+defun test_three_level()
+{
+    a = {{{1, 2}, {3, 4}}};
+}

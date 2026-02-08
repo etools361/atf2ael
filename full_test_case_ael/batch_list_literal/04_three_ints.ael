@@ -1,0 +1,9 @@
+// 04_three_ints.ael - 三元素列表（整数）
+// 目的：观察 {1, 2, 3} 的 IR 模式
+
+decl a;
+
+defun test_three_ints()
+{
+    a = {1, 2, 3};
+}
